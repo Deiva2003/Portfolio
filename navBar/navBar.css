@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.navBar{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+    border-bottom:2px solid rgb(228, 227, 227) ;
+}
+.navBar_Heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navBar_Heading > h1{
+    font-family: "Kode Mono", monospace;
+    font-size: 28px;
+    display: inline;
+}
+.navBar_Heading > span{
+    font-family: "Kode Mono", monospace;
+    color: rgb(206, 205, 205);
+    font-size: 28px;
+    padding: 5px;
+}
+.navBar_Menu > ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+    list-style: none;
+}
+.navBar_Menu > ul > li:hover , .navBar_Message_Container > h3:hover{
+    background: -webkit-linear-gradient(180deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+.navBar_Message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navBar_Message_Container > h3{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    border: 2px solid rgb(228, 227, 227);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navBar_Message_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.navBar_Message_Container >.fa{
+    color: rebeccapurple;
+}
+
